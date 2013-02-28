@@ -1,0 +1,13 @@
+<?php
+/**
+ * @category     Inchoo
+ * @package     Inchoo Featured Products
+ * @author        Domagoj Potkoc, Inchoo Team <web@inchoo.net>
+ * @modified    Mladen Lotar <mladen.lotar@surgeworks.com>, Vedran Subotic <vedran.subotic@surgeworks.com>
+ */
+?>
+
+<div class="category-head">
+	<h2><?php echo $this->__($this->helper('featuredproducts')->getPageLabel());?></h2>
+</div>
+<?php echo $this->getChildHtml('featured_product_list');?>
