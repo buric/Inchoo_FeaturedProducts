@@ -1,3 +1,5 @@
+# [![Inchoo](http://inchoo.net/wp-content/themes/inchoo3/images/logo-inchoo.png)](http://inchoo.net) [Featured Products](http://inchoo.net/ecommerce/magento/featured-products-on-magento-frontpage/)
+
 (Revamped version for new Magento CE & EE : for Magento CE lower that 1.6 and EE lower that 1.11, please use older releases.)
 
 This extension gives your Magento ability for easy management of featured products. Frontend features include separate interface for listing of all featured products and a block usage for easy placement to the interfaces of your choice. Frontend features include:
