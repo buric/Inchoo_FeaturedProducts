@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Inchoo_FeaturedProducts>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Inchoo_FeaturedProducts>
+    </modules>
+</config>
