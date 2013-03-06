@@ -1,0 +1,14 @@
+<?php
+/**
+ *
+ * @category   Inchoo
+ * @package    Inchoo Featured Products
+ * @author     Domagoj Potkoc, Inchoo Team <web@inchoo.net>
+ */
+	$title = Mage::getStoreConfig("featuredproducts/general/heading");
+?>
+    <div class="category-head">
+    	<h2><?php echo $title;?></h2>
+    </div>
+    
+<?php echo $this->getChildHtml('featured_product_list');
