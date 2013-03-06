@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <default>        
+    </default>
+    
+    
+    <featuredproducts_index_index>
+    	<reference name="root">
+            <!-- <action method="setTemplate"><template>page/2columns-left.phtml</template></action>-->
+    	</reference>    	
+    	
+	<reference name="content">    	
+		<block type="core/template" name="category.products" template="inchoo/view.phtml">
+    		<block type="featuredproducts/product_list" name="featured_product_list" as="featured_product_list" template="catalog/product/list.phtml" />
+		</block>
+	</reference>	     
+   	
+    </featuredproducts_index_index>
+    
+</layout>
