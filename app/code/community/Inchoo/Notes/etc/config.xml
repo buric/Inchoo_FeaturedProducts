@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<config>
+    <!--
+    /**
+    * @category     Inchoo
+    * @package     Inchoo Featured Products
+    * @authors       Mladen Lotar <mladen.lotar@surgeworks.com>, Vedran Subotic <vedran.subotic@surgeworks.com>
+    */
+    -->
+    <modules>
+        <Inchoo_Notes>
+            <version>1.0.1</version>
+        </Inchoo_Notes>
+    </modules>
+    <global>
+        <models>
+            <inchoo_notes>
+                <class>Inchoo_Notes_Model</class>
+            </inchoo_notes>
+        </models>
+        <blocks>
+            <inchoo_notes>
+                <class>Inchoo_Notes_Block</class>
+            </inchoo_notes>
+        </blocks>
+        <helpers>
+            <inchoo_notes>
+                <class>Inchoo_Notes_Helper</class>
+            </inchoo_notes>
+        </helpers>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <inchoo_notes_general>
+                                            <title>Inchoo - Notes</title>
+                                        </inchoo_notes_general>
+                                        <inchoo_general>
+                                            <title>Inchoo - General</title>
+                                        </inchoo_general>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <inchoo_notes_call>
+                        <type>singleton</type>
+                        <class>inchoo_notes/feed_updates</class>
+                        <method>check</method>
+                    </inchoo_notes_call>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </adminhtml>
+    <default>
+        <inchoo_notes_general>
+            <feed>
+                <feed_url>http://inchoo.net/extensions/rss.php</feed_url>
+                <use_https>0</use_https>
+                <check_frequency>86400</check_frequency>
+                <enabled>1</enabled>
+                <notify>1</notify>
+            </feed>
+        </inchoo_notes_general>
+    </default>
+</config>
