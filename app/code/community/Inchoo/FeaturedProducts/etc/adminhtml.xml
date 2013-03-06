@@ -1,0 +1,55 @@
+<config>
+    <!--
+    /**
+     * @category     Inchoo
+     * @package     Inchoo Featured Products
+     * @author        Domagoj Potkoc, Inchoo Team <web@inchoo.net>
+     * @modified    Mladen Lotar <mladen.lotar@surgeworks.com>, Vedran Subotic <vedran.subotic@surgeworks.com>
+     */
+    -->
+    <menu>
+        <catalog>
+            <children>
+                <featuredproduct translate="title">
+                    <title>Featured Products</title>
+                    <sort_order>1</sort_order>
+                    <action>adminhtml/featured/index</action>
+                </featuredproduct>
+
+            </children>
+        </catalog>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <featuredproducts translate="title" module="featuredproducts">
+                                        <title>Featured Products Settings</title>
+                                        <sort_order>50</sort_order>
+                                    </featuredproducts>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <featuredproduct translate="title" module="featuredproducts">
+                                <title>Featured Products Data</title>
+                                <sort_order>60</sort_order>
+                            </featuredproduct>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
