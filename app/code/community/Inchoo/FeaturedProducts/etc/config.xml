@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+        <Inchoo_FeaturedProducts>
+            <version>1.1.1</version>
+        </Inchoo_FeaturedProducts>
+    </modules>
+    
+    
+	<global>
+
+        
+		<blocks>
+             <featuredproducts>
+                <class>Inchoo_FeaturedProducts_Block</class>
+             </featuredproducts>
+             
+            <adminhtml>
+            	
+            	
+            	
+            	<!-- 
+            	<rewrite>
+            		<catalog_product_grid>Inchoo_FeaturedProducts_Block_Adminhtml_Products_Grid</catalog_product_grid>
+            	</rewrite>
+            	-->
+         </adminhtml>
+                       
+        </blocks>
+        
+
+
+
+        
+		<helpers>
+             <featuredproducts>
+                <class>Inchoo_FeaturedProducts_Helper</class>
+             </featuredproducts>
+        </helpers>
+        
+		<models>
+			<featuredproducts>
+                <class>Inchoo_FeaturedProducts_Model</class>
+        	</featuredproducts>
+		</models>
+		
+ 
+<resources>
+            <featuredproducts_setup>
+                <setup>
+                    <module>Inchoo_FeaturedProducts</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </featuredproducts_setup>   
+            
+            <featuredproducts_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </featuredproducts_write>
+            <featuredproducts_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </featuredproducts_read>
+            
+                     
+</resources>		
+		
+	</global>
+	
+	
+    <frontend>
+        <routers>
+            <featuredproducts>
+                <use>standard</use>
+                <args>
+                    <module>Inchoo_FeaturedProducts</module>
+                    <frontName>featured-products</frontName>
+                </args>
+            </featuredproducts>
+        </routers>
+        <layout>
+            <updates>
+                <featuredproducts>
+                    <file>inchoofeaturedproducts.xml</file>
+                </featuredproducts>
+            </updates>
+        </layout>
+    </frontend>
+	
+	
+	
+
+	<admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                    	<featuredproducts before="Mage_Adminhtml">Inchoo_FeaturedProducts_Adminhtml</featuredproducts>
+                   		<!--adminexample after="Mage_Adminhtml">Inchoo_AdminExample_Adminhtml</adminexample-->
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+	</admin>
+	
+	<adminhtml>
+		<menu>    
+
+            
+            <catalog>
+            <children>
+					<featuredproduct translate="title">
+						<title>Featured Products</title>
+						<sort_order>1</sort_order>
+						<action>adminhtml/featured/index</action>
+					</featuredproduct>
+					
+                </children>
+            </catalog>
+		</menu>
+		
+		<acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <featuredproducts translate="title" module="featuredproducts">
+                                            <title>Featured Products</title>
+                                            <sort_order>50</sort_order>
+                                        </featuredproducts>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+			
+	</adminhtml>
+	
+	<default>	
+		<featuredproducts>
+			<general>
+				<heading>Featured Products</heading>
+				<meta_title>Featured Products</meta_title>
+				<meta_description>Check out our great collection of Featured products</meta_description>
+				<meta_keywords>featured, products</meta_keywords>
+				<product_sort_by>random</product_sort_by>
+				<number_of_items>5</number_of_items>
+				<number_of_items_per_row>2</number_of_items_per_row>
+				<layout>two_columns_right</layout>
+			</general>			
+		</featuredproducts>
+	
+	</default>
+	
+
+</config>
