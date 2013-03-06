@@ -1,6 +1,6 @@
 # [![Inchoo](http://inchoo.net/wp-content/themes/inchoo3/images/logo-inchoo.png)](http://inchoo.net) [Featured Products](http://inchoo.net/ecommerce/magento/featured-products-on-magento-frontpage/)
 
-(Revamped version for new Magento CE & EE : for Magento CE lower that 1.6 and EE lower that 1.11, please use older releases.)
+(Revamped version for new Magento CE & EE : for Magento CE lower that 1.6 and EE lower that 1.11, please use [older releases](https://github.com/buric/Inchoo_FeaturedProducts/branches).)
 
 ## About
 
@@ -30,11 +30,11 @@ Configuration Options You will be able to choose layout for Featured product lis
  
 ## Changelog
 
-### Version 1.2.3
+### Version [1.2.3](https://github.com/buric/Inchoo_FeaturedProducts/tree/1.2.3)
  1. Reorganized System->Configuration section - everything from Inchoo is under "Inchoo" tab now
  
 
-### Version 1.2.1
+### Version [1.2.1](https://github.com/buric/Inchoo_FeaturedProducts/tree/1.2.1)
  1. Fixed bug when Magento's flat tables are enabled
  2. Admin grid extended with product type column and visibility renderer
  3. Added pagination to featured products view
@@ -51,4 +51,4 @@ Configuration Options You will be able to choose layout for Featured product lis
  
 ### Notice
 
-For Magento versions prior to 1.4 please try to use older extension release (1.1.3), however that one is no longer supported
+For Magento versions prior to 1.4 please try to use older extension release ([1.1.3](https://github.com/buric/Inchoo_FeaturedProducts/tree/1.1.3)), however that one is no longer supported
