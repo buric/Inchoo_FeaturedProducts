@@ -7,6 +7,9 @@ Featured Products by Inchoo
  * @authors     Mladen Lotar <mladen.lotar@surgeworks.com>, Vedran Subotic <vedran.subotic@surgeworks.com>
 ***********************************************
 
+RELEASE NOTES (2.0.1)
+***********************************************
+ 1. Added real CMS widget that can be inserted to CMS blocks and pages (contribution by Sven Varkel <sven.varkel@eepohs.com>)
 
 RELEASE NOTES (1.2.3)
 ***********************************************
