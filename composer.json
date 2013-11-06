@@ -1,0 +1,16 @@
+{
+    "name": "inchoo/featured-products",
+    "type": "magento-module",
+    "description": "This extension gives your Magento ability for easy management of featured products.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zvonimir Burić",
+            "email": "zvonimir.buric@gmail.com"
+        },
+        {
+            "name": "Sven Varkel",
+            "email": "sven.varkel@eepohs.com"
+        }
+    ]
+}
