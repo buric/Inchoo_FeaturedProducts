@@ -1,0 +1,7 @@
+app/code/community/Inchoo/FeaturedProducts app/code/community/Inchoo/FeaturedProducts
+app/code/community/Inchoo/Notes app/code/community/Inchoo/Notes
+app/etc/modules/Inchoo_FeaturedProducts.xml app/etc/modules/Inchoo_Notes.xml
+app/design/frontend/default/default/template/inchoo/featuredproducts app/design/frontend/default/default/template/inchoo/featuredproducts
+app/design/frontend/default/default/layout/inchoofeaturedproducts.xml app/design/frontend/default/default/layout/inchoofeaturedproducts.xml
+app/design/frontend/enterprise/default/template/inchoo/featuredproducts app/design/frontend/enterprise/default/template/inchoo/featuredproducts
+app/design/frontend/enterprise/default/layout/inchoofeaturedproducts.xml app/design/frontend/enterprise/default/layout/inchoofeaturedproducts.xml
