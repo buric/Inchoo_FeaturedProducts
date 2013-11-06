@@ -15,20 +15,20 @@ Backend features include:
 Easy Management of Featured products via separate interface. You do not have to edit every single product and set it to be featured. You will get the special interface where you will be able to choose the products you want to feature from the list.
 Go to admin menu and click on: Catalog -> Featured Products
 Configuration Options You will be able to choose layout for Featured product lising interface, use SEO features, Choose the number of products in the block and choose default sort order.
- 
+
 ## Installation
 
 - Make a backup of both files and database
 - If you're upgrading from older version, please uninstall old version (remove old files from ``app/code/community/Inchoo/FeaturedProducts``, ``app/design/frontend/default/default/template/inchoo``, ``app/design/frontend/default/default/layout/inchoofeaturedproducts.xml`` and ``skin/adminhtml/default/default/images/inchoo``)
 - Click [here](https://github.com/buric/Inchoo_FeaturedProducts/archive/master.zip) to download the archive
 - Extract the archive and copy files to the server
-- If you use custom theme you'll need to copy template and layout files from ``app/design/frontend/defailt/default`` to ``app/design/frontend/your_package/your/theme`` in order to see anything on frontend
+- If you use custom theme you'll need to copy template and layout files from ``app/design/frontend/default/default`` to ``app/design/frontend/your_package/your/theme`` in order to see anything on frontend
 - Clear Magento Cache
 - Log out of admin, and log in again
 - If you use flat categorys and flat products tables, disable both of them, clear cache
 - Enable Catalog Products flat first and save it
 - Enable Catalog Categoryes flat and save them
- 
+
 ## Changelog
 
 ### Version [1.2.3](https://github.com/buric/Inchoo_FeaturedProducts/tree/1.2.3)
