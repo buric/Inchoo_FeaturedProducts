@@ -11,17 +11,7 @@
  * @license  http://eepohs.com/ Eepohs Special License
  * @link     http://esc.eepohs.com/ Eepohs Software Channel
  */
-//namespace Application;
 
-/**
- * Widget
- *
- * @category Deployment
- * @package  Application
- * @author   Sven Varkel <sven.varkel@eepohs.com>
- * @license  http://eepohs.com/ Eepohs Special License
- * @link     http://esc.eepohs.com/ Eepohs Software Channel
- */
 class Inchoo_FeaturedProducts_Block_Widget extends Inchoo_FeaturedProducts_Block_Listing
     implements Mage_Widget_Block_Interface
 {
