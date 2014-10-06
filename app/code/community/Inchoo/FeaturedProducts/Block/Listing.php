@@ -14,7 +14,9 @@ class Inchoo_FeaturedProducts_Block_Listing extends Mage_Catalog_Block_Product_A
 
     public function __construct() {
 
-        $this->setTemplate('inchoo/featuredproducts/block_featured_products.phtml');
+        if(!$this->getTemplate()) {
+            $this->setTemplate('inchoo/featuredproducts/block_featured_products.phtml');
+        }
 
         $this->setLimit((int) Mage::getStoreConfig("featuredproducts/cmspage/number_of_items"));
         $sort_by = Mage::getStoreConfig("featuredproducts/cmspage/product_sort_by");
