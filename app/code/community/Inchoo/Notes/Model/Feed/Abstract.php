@@ -16,7 +16,7 @@ class Inchoo_Notes_Model_Feed_Abstract extends Mage_Core_Model_Abstract{
 
         $curl->write(Zend_Http_Client::GET, $this->getFeedUrl(), '1.0');
         $data = $curl->read();
-        if ($data === false) {
+        if ($data === false || Zend_Http_Response::extractCode($data) !== 200) {
             return false;
         }
 
