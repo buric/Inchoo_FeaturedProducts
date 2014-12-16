@@ -48,7 +48,10 @@ class Inchoo_FeaturedProducts_Block_Listing extends Mage_Catalog_Block_Product_A
                 ->addMinimalPrice()
                 ->addFinalPrice()
                 ->addTaxPercents()
-                ->addAttributeToFilter('inchoo_featured_product', 1, 'left')
+                ->addAttributeToFilter(array(array( // Flat Catalog Product workaround
+                    'attribute' => 'inchoo_featured_product',
+                    'eq' => 1,
+                )), null, 'left')
                 ->addStoreFilter()
                 ->getSelect()->order($this->getSortBy())->limit($this->getLimit());
 
