@@ -21,7 +21,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Renderer_Visibility extends M
         
         $this->_values = Mage::getModel('catalog/product_visibility')->getOptionArray();
         
-        $html = $this->_values[$row->getData($this->getColumn()->getIndex())];
+        $html = $this->_values[(int)$row->getData($this->getColumn()->getIndex())];
       
         return $html;
     }
