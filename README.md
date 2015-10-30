@@ -1,8 +1,6 @@
-# [Fix for grid checkboxes included] 
-# [Featured Products](http://inchoo.net/ecommerce/magento/featured-products-on-magento-frontpage/)
+# [![Inchoo](http://inchoo.net/wp-content/themes/inchoo4/images/logo.svg)](http://inchoo.net) [Featured Products](http://inchoo.net/ecommerce/magento/featured-products-on-magento-frontpage/)
 
-Updated version of Inchoo_FeaturedProducts extension, with fix of grid checkboxes. 
-In case filter applied to grid checkboxes become inaccessible.
+(Revamped version for new Magento CE & EE : for Magento CE lower that 1.6 and EE lower that 1.11, please use [older releases](https://github.com/buric/Inchoo_FeaturedProducts/branches).)
 
 ## About
 
@@ -32,9 +30,6 @@ Configuration Options You will be able to choose layout for Featured product lis
 - Enable Catalog Categoryes flat and save them
 
 ## Changelog
-
-### Version [1.2.4]
- 1. Updated version of Inchoo_FeaturedProducts extension, with fix of grid checkboxes. In case filter applied to grid, checkboxes become inaccessible.
 
 ### Version [1.2.3](https://github.com/buric/Inchoo_FeaturedProducts/tree/1.2.3)
  1. Reorganized System->Configuration section - everything from Inchoo is under "Inchoo" tab now
