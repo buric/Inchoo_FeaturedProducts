@@ -7,6 +7,7 @@
  * @modified    Mladen Lotar <mladen.lotar@surgeworks.com>, Vedran Subotic <vedran.subotic@surgeworks.com>
  */
 class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_Block_Widget_Grid {
+
     public function __construct() {
         parent::__construct();
 
@@ -175,10 +176,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_B
 
     public function getGridUrl() {
         return $this->getUrl('*/featured/index', array('_current' => true));
-        //return $this->getUrl('*/*/grid', array('_current' => true));
     }
-
-
 
     protected function _getSelectedProducts($json = false) {
         $temp = $this->getRequest()->getPost('featured_ids');
@@ -301,6 +299,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_B
         }
    
 		$("in_featured_products").value = checkBoxes.toQueryString();
+		console.log("Products", checkBoxes);
 	   	$gridName.reloadParams = {'featured_ids':checkBoxes.toQueryString()};    
     }
     
@@ -312,8 +311,6 @@ EndHTML;
         return $html;
     }
 
-
-
     private function _appendHtml() {
         $html = '<script type="text/javascript">	
 		var checkBoxes = $H();
@@ -322,20 +319,21 @@ EndHTML;
         	var everycheckbox = $$("#inchoo_featured_products_table tbody input.checkbox");
 		
 		checkbox_all.observe("click", function(event) {
-            if(checkbox_all.checked)
-            {
-                        everycheckbox.each(function(element, index) {
-                            
-                checkBoxes.set(element.value, 1)
-                            
-                    });
-            } else
-                            {
-                                everycheckbox.each(function(element, index) {
-                                checkBoxes.set(element.value, 0)
+		
+		if(checkbox_all.checked)
+		{
+                	everycheckbox.each(function(element, index) {
+                        
+			checkBoxes.set(element.value, 1)
+                        
                 });
-                    }
-            $("in_featured_products").value = checkBoxes.toQueryString();
+                    } else
+                        {
+                            everycheckbox.each(function(element, index) {
+                            checkBoxes.set(element.value, 0)
+			});
+                }
+    	$("in_featured_products").value = checkBoxes.toQueryString();
 		});	
 
         </script>';
