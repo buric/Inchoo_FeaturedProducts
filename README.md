@@ -1,4 +1,4 @@
-# [![Inchoo](http://inchoo.net/wp-content/themes/inchoo4/images/logo.svg)](http://inchoo.net) [Featured Products](http://inchoo.net/ecommerce/magento/featured-products-on-magento-frontpage/)
+# [Fix for grid checkboxes included] [Featured Products](http://inchoo.net/ecommerce/magento/featured-products-on-magento-frontpage/)
 
 (Revamped version for new Magento CE & EE : for Magento CE lower that 1.6 and EE lower that 1.11, please use [older releases](https://github.com/buric/Inchoo_FeaturedProducts/branches).)
 
