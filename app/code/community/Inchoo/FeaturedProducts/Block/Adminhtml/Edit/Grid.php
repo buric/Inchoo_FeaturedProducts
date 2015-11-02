@@ -10,7 +10,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_B
 
         $this->setId('inchoo_featured_products');
         $this->setDefaultSort('entity_id');
-        $this->setUseAjax(true);
+        $this->setUseAjax(false);
 
         $this->setRowClickCallback('FeaturedRowClick');
     }
@@ -172,7 +172,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_B
     }
 
     public function getGridUrl() {
-        return $this->getUrl('*/*/grid', array('_current' => true));
+        return $this->getUrl('*/featured/index', array('_current' => true));
     }
 
     protected function _getSelectedProducts($json = false) {
