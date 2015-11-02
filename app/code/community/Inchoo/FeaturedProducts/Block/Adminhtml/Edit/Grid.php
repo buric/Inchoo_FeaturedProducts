@@ -1,13 +1,10 @@
 <?php
 
 /**
- * @category     Inchoo
- * @package     Inchoo Featured Products
- * @author        Domagoj Potkoc, Inchoo Team <web@inchoo.net>
- * @modified    Mladen Lotar <mladen.lotar@surgeworks.com>, Vedran Subotic <vedran.subotic@surgeworks.com>
+ * @author Zvonimir Buric
  */
-class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_Block_Widget_Grid {
-
+class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_Block_Widget_Grid
+{
     public function __construct() {
         parent::__construct();
 
@@ -243,7 +240,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_B
         
     };
     
-    document.observe("dom:loaded", function() {
+    var initCheckboxes = function() {
         
         var everycheckbox = $$("#inchoo_featured_products_table tbody input.checkbox");
         
@@ -264,7 +261,7 @@ class Inchoo_FeaturedProducts_Block_Adminhtml_Edit_Grid extends Mage_Adminhtml_B
                 }
         });
     
-    });
+    }
 
 
     function categorySubmit(url) {
@@ -335,6 +332,8 @@ EndHTML;
                 }
     	$("in_featured_products").value = checkBoxes.toQueryString();
 		});	
+
+	initCheckboxes();
 
         </script>';
 
