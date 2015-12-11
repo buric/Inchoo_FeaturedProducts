@@ -16,8 +16,7 @@
             <?php
             $i = 0;
             $row = 0;
-            foreach ($_products->getItems() as $_product):
-                ?>
+            foreach ($_products->getItems() as $_product): ?>
 
 
                     <li class="item last">
@@ -31,8 +30,10 @@
 
                                     <?php echo $this->getPriceHtml($_product, true, '-new') ?>
 
-                                    <?php if ($_product->isSaleable()){
+                                    <?php if ($_product->isSaleable()): ?>
                                         <button type="button" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                    <?php endif; ?>
+                                    
                                 <?php endif; ?>
 
                             </div>
@@ -41,13 +42,9 @@
 
 
 
-                    <?php $i++;
-                    if ($i == $this->getItemsPerRow()):
-                        ?>
-                    <?php $i = 0; ?>
-                    </tr>
-        <?php endif; ?>
-    <?php endforeach; ?>
+                    <?php $i++; ?>
+                    
+            <?php endforeach; ?>
 
     </ul>
     </div>
