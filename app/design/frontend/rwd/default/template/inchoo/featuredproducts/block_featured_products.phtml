@@ -7,10 +7,12 @@
  */
 ?>
 <?php $image_size = (int) Mage::getStoreConfig("featuredproducts/cmspage/max_image_dimension") ?>
+<?php $columns = (int) Mage::getStoreConfig("featuredproducts/cmspage/number_of_items_per_row") ?>
+
 <?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
     <div class="featuredProducts">
     <h2><?php echo $this->__($this->getBlockLabel()) ?></h2>
-    <ul class="products-grid products-grid--max-6-col first last odd">
+    <ul class="products-grid products-grid--max-<?php echo $columns;?>-col first last odd">
 
 
             <?php
